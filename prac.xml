@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE wholeSaleElectronics SYSTEM "prac.dtd">
+<wholeSaleElectronics>
+    <stock>
+        <product id="A050" category="SmartPhoneS">
+            <brand>iphone</brand>
+            <model>15</model>
+            <price currency="euros 1000.00"/>
+            <quantityInStock>1300</quantityInStock>
+        </product>
+    </stock>
+    <wholeSaleClients>
+        <!-- contains customer details -->
+        <client id="B12"/>
+        <name>Zepp Electronic</name>
+        <!-- name of company -->
+        <contactPerson>Carlos Garcia</contactPerson>
+        <email>carlosgarcia@zeppelectronics.com</email>
+        <!-- email of the contact person -->
+        <phoneNumber>682749374</phoneNumber>
+        <address>
+            <!-- adress of the client -->
+            <city>Barcelona</city>
+            <country>Spain</country>
+            <street>Passeig de Gracia 2</street>
+            <postalCode>08029</postalCode>
+        </address>
+        <orders>
+            <!-- contains details of purchased products -->
+            <product id="B003" quantity="200" orderDate="4/11/2023"/>
+        </orders>
+    </wholeSaleClients>
+</wholeSaleElectronics>

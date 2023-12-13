@@ -1,0 +1,24 @@
+<!ELEMENT wholeSaleElectronics (stock, wholeSaleClients)>       
+<!ELEMENT stock (product)>
+<!ELEMENT product (brand, model, price, quantityInStock)>
+<!ATTLIST product id ID #REQUIRED category CDATA #REQUIRED quantity CDATA #REQUIRED orderDate CDATA #REQUIRED>
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT price EMPTY>
+<!ATTLIST price currency CDATA #REQUIRED>
+<!ELEMENT quantityInStock (#PCDATA)>
+<!ELEMENT wholeSaleClients (client)>
+<!ELEMENT client (name, contactPerson, email, phoneNumber, address, orders?)>
+<!ATTLIST client id ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT contactPerson (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phoneNumber (#PCDATA)>
+<!ELEMENT address (city, country, street, postalCode)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT postalCode (#PCDATA)>
+<!ELEMENT orders (product)>
+<!ELEMENT product EMPTY>
+<!ATTLIST product id IDREF #REQUIRED quantity CDATA #REQUIRED orderDate CDATA #REQUIRED category CDATA #REQUIRED>
